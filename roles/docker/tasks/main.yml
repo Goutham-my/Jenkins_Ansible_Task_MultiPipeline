@@ -1,0 +1,17 @@
+---
+# These task installs and enables docker on Server
+- name: ensure Docker is installed
+  yum: 
+    name: docker
+    state: present
+
+- name: ensure docker is running and enable the service when server is restarted
+  service: 
+    name: docker 
+    state: started
+    enabled: yes
+
+- name: adding ec2-user user to docker group
+  group:
+    name: docker
+    state: present
