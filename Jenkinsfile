@@ -15,8 +15,8 @@ node{
         if (env.BRANCH_NAME=='dev') {
             sh 'ansible-playbook -i dev.inventory site.yml'
         }
-        else if(env.Branch_name=='test'){
-        sh 'ansible-playbook -i test.inventory site.yml'
+        else if(env.Branch_name=='qa'){
+        sh 'ansible-playbook -i qa.inventory site.yml'
     
     }
     }
