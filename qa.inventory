@@ -1,18 +1,13 @@
 
+[qa]
+
+172.31.3.242
 
 
-[test]
-
-172.31.20.27
-
-
-[test:vars]
+[qa:vars]
 
 ansible_user=ec2-user
-ansible_ssh_private_key_file=/var/lib/jenkins/ansible.pem
-
-
-
+ansible_ssh_private_key_file=~/MeCapri91.pem
 
 
 
